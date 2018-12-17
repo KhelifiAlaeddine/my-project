@@ -27,6 +27,10 @@
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
     </ul>
+    <span v-bind:title="message">
+    Hover your mouse over me for a few seconds
+    to see my dynamically bound title!
+  </span>
   </div>
 </template>
 
@@ -35,6 +39,11 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data: function () {
+    return {
+      message: 'You loaded this page on ' + new Date().toLocaleString()
+    }
   }
 }
 </script>
