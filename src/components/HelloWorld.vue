@@ -6,6 +6,7 @@
 import myButton from "./my-button.vue";
 
 export default {
+
   components: {
     myButton
   },
