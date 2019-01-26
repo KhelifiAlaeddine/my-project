@@ -6,12 +6,15 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from './components/HelloWorld.vue';
+import myButton from './components/my-button.vue';
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    myButton
   }
 }
 </script>
